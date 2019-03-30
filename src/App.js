@@ -50,10 +50,10 @@ class App extends Component {
     }
 
     removeItem = index => {
-        const { campaignList } = this.state;
+        const { campaignListToDisplay } = this.state;
 
         this.setState({
-            campaignList: campaignList.filter((item, i) => {
+            campaignListToDisplay: campaignListToDisplay.filter((item, i) => {
                 return i !== index;
             })
         });
